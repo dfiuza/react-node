@@ -1,0 +1,54 @@
+{
+  "name": "node-react",
+  "version": "1.0.0",
+  "description": "Integração simples do React.js com o node.js",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dfiuza/react-node"
+  },
+  "keywords": [
+    "reactjs",
+    "nodejs",
+    "expressjs",
+    "concurrently",
+    "nodemon",
+    "frontend",
+    "backend"
+  ],
+  "author": "Diego César Fiuza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dfiuza/react-node"
+  },
+  "homepage": "https://github.com/dfiuza/react-node#readme",
+  "dependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
+    "@babel/node": "^7.15.4",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-typescript": "^7.15.0",
+    "@types/jest": "^27.0.1",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "concurrently": "^5.3.0",
+    "express": "^4.18.2",
+    "i": "^0.3.7",
+    "jest": "^27.2.0",
+    "ts-jest": "^27.0.5",
+    "ts-node-dev": "^1.1.8",
+    "tsconfig-paths": "^3.11.0",
+    "typescript": "^4.4.3"
+  },
+  "devDependencies": {
+    "axios": "^1.4.0",
+    "node-fetch": "^2.6.11",
+    "nodemon": "^2.0.22"
+  }
+}
